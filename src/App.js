@@ -1,17 +1,10 @@
 
 import { Col, Container, Row } from 'react-bootstrap';
 import './App.css';
+import data from './data.js';
 
 
 function App() {
-
-  const data=[
-    {id:'1',name:'Meryem', date:'quatre heures du soir',img:'p-2.jfif'},
-    {id:'1',name:'Hassnae', date:'cinq heures du soir',img:'p-3.jfif'},
-    {id:'1',name:'Mouna', date:'six heures du soir',img:'p-4.jfif'},
-    {id:'1',name:'Amine', date:'sept heures du soir',img:'p-1.jfif'},
-    {id:'1',name:'Ismail', date:'huit heures du soir',img:'p-5.jfif'},
-  ]
 
   return (
     <div className="font color-body">
@@ -19,7 +12,7 @@ function App() {
         <Container className='py-5'>
 
           <Row className='justify-content-center'>
-            <Col sm='8' >
+          <Col sm='8' >
             Vous avez {data.length} rendez-vous aujourd'hui
             </Col>
           </Row>
@@ -40,7 +33,7 @@ function App() {
                 </div>
                 );
               }
-              )): <h2>il n'est pas de rendez-vous aujourd'hui</h2>}
+              )): <h2 className='p-5 text-center'>il n'est pas de rendez-vous aujourd'hui</h2>}
 
 
             </div>
